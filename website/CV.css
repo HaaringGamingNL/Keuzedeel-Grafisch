@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #3a0d5a;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: #00948D;
+}
+
+.nav-box {
+  flex: 1;
+  background-color: #0FA099;
+  border-radius: 14px;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-box.left {
+  justify-content: flex-start;
+  gap: 10px;
+  font-weight: bold;
+}
+
+.nav-box.center a {
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.nav-box.right {
+  justify-content: flex-end;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.login {
+  background-color: #007F79;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.top-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #7b3bbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  min-height: 180px;
+}
+
+.card.square {
+  border-radius: 6px;
+}
+
+.card.rounded {
+  border-radius: 30px;
+}
+
+.section-title {
+  background: #5a218c;
+  text-align: center;
+  padding: 12px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.concept-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.concept-card {
+  background: #6a2fa0;
+  border-radius: 16px;
+  padding: 15px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  min-height: 110px;
+}
+
+.concept-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.concept-card h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.concept-card p {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.concept-card.empty {
+  background: #5a218c;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-box {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .top-section {
+    grid-template-columns: 1fr;
+  }
+
+  .concept-grid {
+    grid-template-columns: 1fr;
+  }
+}
