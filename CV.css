@@ -126,6 +126,7 @@ body {
 
 .concept-card.empty {
   background: #5a218c;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
