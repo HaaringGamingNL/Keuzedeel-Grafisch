@@ -136,3 +136,8 @@ body {
 .skills-box ul {
   padding-left: 16px;
 }
+
+img {
+  object-fit: cover;
+  aspect-ratio: 2/1;
+}
