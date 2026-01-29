@@ -126,6 +126,11 @@ body {
 
 .concept-card.empty {
   background: #5a218c;
+  justify-content: center;
+}
+
+p {
+  color: #fff;
 }
 
 @media (max-width: 768px) {
